@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import NewYear from "./pages/NewYear"
+import Year from "./pages/year";
+import Ten from "./pages/Ten";
+//"2022-12-31T23:59:59+00:00"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Year />
+        </Route>
+        <Route exact path="/ten">
+          <Ten />
+        </Route>
+        <Route exact path="/fin">
+          <NewYear /> 
+        </Route>
+
+      </Switch>
+
+    </Router>
+
+
   );
+ 
+
 }
 
 export default App;
+
+
