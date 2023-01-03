@@ -9,7 +9,7 @@ const Ten = () => {
   
 
     const calculateTimeLeft = () => {
-      const difference = +new Date("2022-12-31T23:00:00+00:00") - +new Date();
+      const difference = +new Date("2023-12-31T23:00:00+00:00") - +new Date();
       let timeLeft = {};
       
       if (difference > 1) {
