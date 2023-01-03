@@ -13,7 +13,7 @@ new year
 
 ## Demo
 
-link to demo : https://shiny-tartufo-64c50b.netlify.app/ 
+link to demo :https://wondrous-florentine-3d404b.netlify.app/ 
 
 
 ## Installation
